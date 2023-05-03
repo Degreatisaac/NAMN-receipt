@@ -41,3 +41,10 @@ function submitForm(e) {
   
     location.href = "receipt.html";
   }
+
+  function generatePDF () {
+    const element = document.getElementById('main');
+    html2pdf()
+    .from(element)
+    .save();
+  }
