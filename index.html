@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img"><img src="img/THE ACHIEVERS TEAM 20230501_123518.jpg" alt=""></div>
+
+    <h1>NATIONAL ASSOCIATION OF MATHEMATICS STUDENTS OF NIGERIA</h1>
+    <h1>FUNAAB CHAPTER</h1>
+    <p>Fill in the right details to generate your receipt</p>
+
+  
+
+    <form action="#" class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+        <input type="text" name="name" placeholder="Enter your full Name">
+        <input type="text"  name="matric" placeholder="Enter your Matric/Reg Number">
+        <select name="level" id="level">
+            <option value="select">Select your level</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+        </select>
+
+        <select name="status" id="status">
+            <option value="select">Select your status</option>
+            <option value="Fresher">Fresher</option>
+            <option value="Staylite">Staylite</option>
+        </select>
+
+        <select name="amount" id="amount">
+            <option value="select">--Select Amount--</option>
+            <option value="#2000">#2000</option>
+            <option value="#4000">#4000</option>
+        </select>
+
+        <input type="text"  name="bank" placeholder="Enter your Bank Name">
+        <input type="text"  name="date" placeholder="Payment Date (DD/MM/YYYY)">
+        <button>Get Receipt</button>
+    </form>
+    <script src="receipt.js"></script>
+</body>
+</html>

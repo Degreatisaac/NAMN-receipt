@@ -1,0 +1,151 @@
+body {
+    background: rgb(255, 247, 178);
+}
+
+img {
+    width: 10rem;
+    border-radius: 200px;
+  
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:3rem ;
+}
+
+h1 {
+    color: rgb(51, 69, 115);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+p {
+    color: rgb(231, 0, 0);
+    padding: 2rem;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+input {
+    width: 300px;
+    background: rgb(255, 247, 178);
+    border: 2px solid rgb(51, 69, 115);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+input::placeholder  {
+    color: rgb(51, 69, 115);
+    font-size: 1rem;
+}
+
+
+select {
+    width: 320px;
+    background: rgb(255, 247, 178);
+    border: 2px solid rgb(51, 69, 115);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+option{
+    color: rgb(51, 69, 115);
+    font-size: 1rem;
+}
+
+button {
+    background: rgb(255, 247, 178);
+    border: 2px solid rgb(51, 69, 115);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+     color: rgb(51, 69, 115);
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color:rgb(51, 69, 115);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.association {
+    color: rgb(231, 0, 0);
+    text-decoration: underline;
+    margin: 2rem;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15rem;
+    margin-top: 5rem;
+}
+
+.partone, .parttwo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+
+.payer {
+    color: rgb(231, 0, 0); 
+}
+
+.note {
+    color:rgb(51, 69, 115);
+}
+
+.invalid {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.line {
+    border-bottom: 2px solid  rgb(51, 69, 115);
+}
+
+.autorized {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty {
+    border-bottom: 2px solid  rgb(231, 0, 0);
+    margin-top: 2rem;
+    width: 15rem;
+}
+
+.sign {
+    margin-top: -1.5rem;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width:700px) {
+    .container {
+        margin-left: 2rem;
+    }
+}
