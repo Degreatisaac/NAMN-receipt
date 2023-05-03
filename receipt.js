@@ -42,7 +42,8 @@ function submitForm(e) {
     location.href = "receipt.html";
   }
 
-document.querySelector('#download').onclick = function() {
-  var element = document.querySelector('#main');
-        html2pdf().from(element).save();
-}
+  let main = document.querySelector('#main');
+  let btn = document.querySelector('#download');
+  btn.addEventListener('click', () => {
+    html2pdf().from(main).save()
+  });
