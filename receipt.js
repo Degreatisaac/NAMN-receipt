@@ -43,8 +43,8 @@ function submitForm(e) {
   }
 
   function generatePDF() {
-    const element = document.getElementById('main');
-    html2pdf()
-    .from(element)
-    .save();
+    var doc = new jsPDF();
+    var html = document.documentElement.innerHTML;
+    doc.fromHtml(html, 15, 15);
+    doc.save('namsnreceipt.pdf');
   }
