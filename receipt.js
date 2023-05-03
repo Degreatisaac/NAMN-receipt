@@ -42,9 +42,26 @@ function submitForm(e) {
     location.href = "receipt.html";
   }
 
-  function generatePDF () {
-    const element = document.getElementById('main');
-    html2pdf()
-    .from(element)
-    .save();
-  }
+ // function generatePDF() {
+   // const element = document.getElementById('main');
+    //html2pdf()
+    //.from(element)
+    //.save();
+  //}
+
+
+  var doc = new jsPDF();
+  var specialElementHandlers = {
+    '#editor': function (element, renderer) {
+      return true;
+    }
+  };
+
+  $('downlaod').click(function() {
+    doc.fromHTML($('#main').html(), 15, 15, {
+      'width':190,
+          'elementHandlers':
+      specialElementHandlers
+    });
+    doc.save('namsnreceipt.pdf');
+  });
