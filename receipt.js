@@ -48,3 +48,5 @@ function submitForm(e) {
     doc.fromHtml(html, 15, 15);
     doc.save('namsnreceipt.pdf');
   }
+
+  generatePDF();
