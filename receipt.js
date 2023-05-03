@@ -42,8 +42,13 @@ function submitForm(e) {
     location.href = "receipt.html";
   }
 
+  import {jsPDF} from "jspdf";
+
+  const doc = new jsPDF();
+
   let main = document.querySelector('#main');
   let btn = document.querySelector('#download');
   btn.addEventListener('click', () => {
-    html2pdf().from(main).save()
+    doc.text('main', 10, 10);
+    doc.save('namsnreceipt.pdf');
   });
