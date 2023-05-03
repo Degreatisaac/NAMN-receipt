@@ -42,11 +42,7 @@ function submitForm(e) {
     location.href = "receipt.html";
   }
 
-  function generatePDF() {
-    var doc = new jsPDF();
-    var html = document.documentElement.innerHTML;
-    doc.fromHtml(html, 15, 15);
-    doc.save('namsnreceipt.pdf');
-  }
-
-  generatePDF();
+document.querySelector('#download').onclick = function() {
+  var element = document.querySelector('#main');
+        html2pdf().from(element).save();
+}
