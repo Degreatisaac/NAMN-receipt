@@ -49,7 +49,7 @@ function submitForm(e) {
 				// Choose the element that your content will be rendered to.
 				const element = document.getElementById('main');
 				// Choose the element and save the PDF for your user.
-				html2pdf().from(element).save();
+				html2pdf().from(element).save('namsnreceipt.pdf');
 			}
 
 			button.addEventListener('click', generatePDF);
